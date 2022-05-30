@@ -10,7 +10,7 @@ Awesome books using HTML, CSS, and JavaScripts
 
 ## Live Demo
 
-[Live Demo Link]( https://jheart-vic.github.io/AWESOME-BOOK-ES6/)
+[Live Demo Link](  https://jheart-vic.github.io/Awesome-Book-ES6/)
 
 ## Getting Started
 

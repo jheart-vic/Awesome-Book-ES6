@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Awesome Books</title>
+    <link rel="stylesheet" href="index.css" />
+    <script src="./modules/luxon/src/luxon.js" type="module"></script>
+    <script src="./modules/index.js" type="module"></script>
+  </head>
+  <body>
+    <header>
+      <h3 class="text" id="text">Awesome <span class="span">Books</span></h3>
+      <ul class="ul">
+        <li class="list-item" id="my-list">
+          <a href="#display-books"> My lists</a>
+        </li>
+        <li class="line list-item" id="add-new">
+          <a href="#form-wrapper"> Add New</a>
+        </li>
+        <li class="list-item" id="contact-li">
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
+    </header>
+    <p id="date-p"></p>
+    <div id="form-wrapper" class="container addBook">
+      <form id="form">
+        <h2>Add New Books</h2>
+        <input type="text" id="title" placeholder="Title" />
+
+        <input type="text" id="author" placeholder="Author" />
+
+        <input type="submit" id="submit" value="Add Book" />
+      </form>
+    </div>
+    <h3 class="display-text">All Awesome <span class="span">Books</span></h3>
+    <section id="display-books" class="show"></section>
+    <section id="contact" class="contact">
+      <h3 class="contact-text">Contact Information</h3>
+      <p class="p-text">
+        Do you want to contact us or you just want to say Hi?
+      </p>
+      <ul class="contact-ul">
+        <li>Our email: mail@yahoo.com</li>
+        <li>Our phone number: +234783896876</li>
+        <li>Our address: 19 Ofoelo street Lagos Nigeria</li>
+      </ul>
+    </section>
+
+    <footer>@copy 2022 production</footer>
+    <!-- <script src="app.js"></script>
+    <script src="index.js"></script> -->
+  </body>
+</html>

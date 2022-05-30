@@ -1,0 +1,168 @@
+.container {
+  margin: 20vh auto 0 auto;
+  text-align: center;
+  width: 100%;
+  padding-top: 40px;
+  height: 100vh;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 100%;
+  padding-bottom: 10px;
+  border: 1px solid #ddd;
+  margin: 0;
+  top: 0;
+  position: fixed;
+  background-color: lightgrey;
+}
+
+.line {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+
+header .text {
+  padding: 5px;
+  margin-left: 15px;
+}
+
+header ul {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+header ul li {
+  list-style: none;
+  margin-right: 15px;
+  padding: 3px;
+}
+
+header ul li a {
+  text-decoration: none;
+  cursor: pointer;
+  color: black;
+}
+
+#form-wrapper {
+  padding: 25vh 8vh 8vh 8vh;
+  margin-top: 5%;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  height: 90vh;
+  margin: 0;
+}
+
+#title,
+#author {
+  width: 400px;
+  height: 28px;
+  outline: none;
+}
+
+#form input::placeholder {
+  font-size: 16px;
+  font-weight: 200;
+}
+
+#form input:hover {
+  outline: none;
+}
+
+#btn {
+  width: 100px;
+  height: 50px;
+  align-self: center;
+  margin-left: 38%;
+}
+
+#display-books {
+  padding: 7vh;
+  border: 2px solid black;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.display-text {
+  color: #000;
+  text-align: center;
+  padding-top: 288px;
+}
+
+.contact-text,
+.p-text {
+  text-align: center;
+}
+
+.p-text {
+  margin-left: 50px;
+}
+
+.display {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 70%;
+  margin: 0 auto 5vh auto;
+  padding: 5px 5px 5px 5px;
+  color: black;
+}
+
+.display:nth-child(odd) {
+  background-color: lightgrey;
+}
+
+.display:nth-child(even) {
+  background-color: #fff;
+}
+
+#contact {
+  margin-top: 15px;
+  height: 90vh;
+  padding-top: 25vh;
+  text-align: center;
+}
+
+.contact-ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: baseline;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-ul li {
+  margin-left: 40%;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  border: 1px solid #ddd;
+  padding: 2%;
+  margin-top: 20vh;
+}
+
+.hidden {
+  display: none;
+}
+
+#date-p {
+  display: flex;
+  padding-top: 10vh;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin: 30px 15px 0 85%;
+  position: fixed;
+}

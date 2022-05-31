@@ -3,14 +3,15 @@ const addBook = document.querySelector('.addBook');
 const contact = document.querySelector('.contact');
 const show = document.querySelector('.show');
 const display = document.querySelector('.display-text');
+const text = document.querySelector('h2');
 
 export default function navActions(key) {
   switch (key) {
     case 'text':
-      show.classList.remove('hidden');
-      display.classList.remove('hidden');
       addBook.classList.add('hidden');
       contact.classList.add('hidden');
+      display.classList.remove('hidden');
+      show.classList.remove('hidden');
       break;
 
     case 'my-list':
@@ -20,18 +21,18 @@ export default function navActions(key) {
       display.classList.remove('hidden');
       break;
 
-    case 'add-new':
-      show.classList.add('hidden');
-      display.classList.add('hidden');
+      case 'add-new':
+        show.classList.add('hidden');
+        display.classList.add('hidden');
+        addBook.classList.remove('hidden');
       contact.classList.add('hidden');
-      addBook.classList.remove('hidden');
       break;
 
-    case 'contact-li':
-      show.classList.add('hidden');
-      addBook.classList.add('hidden');
-      display.classList.add('hidden');
-      contact.classList.remove('hidden');
+      case 'contact-li':
+        show.classList.add('hidden');
+        addBook.classList.add('hidden');
+        display.classList.add('hidden');
+        contact.classList.remove('hidden');
       break;
 
     default:
@@ -43,4 +44,8 @@ navlists.forEach((item) => {
   item.addEventListener('click', (e) => {
     navActions(e.target.parentElement.id);
   });
+});
+
+text.addEventListener('click', (e) => {
+  navActions(e.target.id);
 });

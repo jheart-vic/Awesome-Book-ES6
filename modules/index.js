@@ -4,6 +4,7 @@ import Book from './book.js';
 import navActions from './navbar.js';
 
 import { DateTime } from './luxon.js';
+const empty = document.getElementById('empty')
 
 class StoredBooks {
   static getBook() {
@@ -13,12 +14,18 @@ class StoredBooks {
     } else {
       books = JSON.parse(localStorage.getItem('books'));
     }
-    return books;
+    if(books.length === 0){
+      empty.style.display = 'block';
+     }else{
+      empty.style.display = 'none';
+     }
+    return books
   }
 
   static addBook(book) {
     const books = StoredBooks.getBook();
     books.push(book);
+    empty.style.display = 'none';
     localStorage.setItem('books', JSON.stringify(books));
   }
 
@@ -43,6 +50,11 @@ class UserInterFace {
     books.forEach((book) => {
       UserInterFace.showBookLists(book);
     });
+    if(books.length === 0){
+      empty.style.display = 'block';
+     }else{
+      empty.style.display = 'none';
+     }
   }
 
   static showBookLists(book) {
@@ -84,6 +96,7 @@ document.querySelector('#display-books').addEventListener('click', (e) => {
 });
 UserInterFace.showBooks();
 
+
 const date = document.getElementById('date-p');
 const time = () => {
   date.textContent = DateTime.now().toLocaleString({
@@ -92,6 +105,7 @@ const time = () => {
     year: 'numeric',
     hour: 'numeric',
     minute: '2-digit',
+    seconds: '2-digits'
   });
 };
 setInterval(time, 1000);

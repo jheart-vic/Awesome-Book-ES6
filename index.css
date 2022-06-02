@@ -166,3 +166,39 @@ footer {
   margin: 30px 15px 0 85%;
   position: fixed;
 }
+
+#empty {
+  text-align: center;
+  display: none;
+}
+
+@media screen and (max-width: 680px) {
+  .container {
+    margin: 15vh auto 5vh auto;
+  }
+
+  #date-p {
+    margin: 30px 15px 0 55%;
+    padding-top: 15vh;
+  }
+
+  #empty {
+    text-align: center;
+  }
+
+  .contact-ul li {
+    text-align: center;
+    margin-left: 10%;
+  }
+
+  #title,
+  #author {
+    width: 200px;
+    margin: 0 3.5rem 0 0;
+  }
+
+  #form h3 {
+    margin-right: 15%;
+    text-align: center;
+  }
+}

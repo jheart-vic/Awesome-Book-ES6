@@ -21,18 +21,18 @@ export default function navActions(key) {
       display.classList.remove('hidden');
       break;
 
-      case 'add-new':
-        show.classList.add('hidden');
-        display.classList.add('hidden');
-        addBook.classList.remove('hidden');
+    case 'add-new':
+      show.classList.add('hidden');
+      display.classList.add('hidden');
+      addBook.classList.remove('hidden');
       contact.classList.add('hidden');
       break;
 
-      case 'contact-li':
-        show.classList.add('hidden');
-        addBook.classList.add('hidden');
-        display.classList.add('hidden');
-        contact.classList.remove('hidden');
+    case 'contact-li':
+      show.classList.add('hidden');
+      addBook.classList.add('hidden');
+      display.classList.add('hidden');
+      contact.classList.remove('hidden');
       break;
 
     default:
